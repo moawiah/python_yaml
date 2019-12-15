@@ -3,7 +3,7 @@ import logging
 import os
 import sys
 
-class ADD(yaml.YAMLObject):
+class AD(yaml.YAMLObject):
     yaml_tag = '!add'
 
     def __init__(self, input_value_1, input_value_2):

@@ -5,7 +5,7 @@ import os
 import logging
 from power import Power2
 from system import System
-from add import ADD
+from add import AD
 
 ## Logging Level Configuration
 logging.basicConfig(level=logging.INFO)

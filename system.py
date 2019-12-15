@@ -3,7 +3,7 @@ import logging
 import os
 import sys
 from power import Power2
-from add import ADD
+from add import AD
 
 def singleton(cls):
     instances = {}
@@ -69,7 +69,7 @@ class System(yaml.YAMLObject):
                 if module == "add":
                     needed_imps = self.modules[module]
                 if needed_imps == 'normal_add':
-                    add_obj = ADD(self.outputs[0],self.outputs[1])
+                    add_obj = AD(self.outputs[0],self.outputs[1])
                     logging.info('Final Result: '+ str(add_obj.normal_add()))
 
     @classmethod
