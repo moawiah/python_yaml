@@ -1,0 +1,16 @@
+## A simple YAML configuration to be used
+## To change the implementation for a specific input --> write the needed implementation name 
+## at the associated index within the Power2 implementation list
+## In this example: 
+##      2 -->  power_by_addition
+##      3 -->  power_by_self_mul
+!system
+algorithm: 'Pythagorean'
+modules: {
+  Power2: [power_by_addition, power_by_self_mul], ## Power2 has 2 imps --> first is for 1st input and second for the 2nd input
+  add: normal_add ## AD module has one implementation in this example
+} 
+inputs: {2, 3} ## Input vector: mapped to Power2 list of implementations using Index value 
+
+
+
